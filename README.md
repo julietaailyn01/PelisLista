@@ -65,7 +65,7 @@ Para el desarrollo de la aplicación deberá utilizar:
 - Typescript
 - Redux
 - Fluent UI
-- Librería de estilos (Sass)
+- Uso de Sass
 - Mobile friendly
 - Manejo de errores
 - _(opcional)_ Unit tests (jest, react-testing-library, o similar)
