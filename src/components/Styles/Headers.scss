@@ -1,0 +1,19 @@
+.header-containter{
+    display:flex;
+    gap: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+
+    .link{
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #F78C38;
+        transition: color 0.3s ease;
+
+        &:hover{
+            color: #DD6609;
+        }
+    }
+}

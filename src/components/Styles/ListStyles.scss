@@ -1,0 +1,99 @@
+.container{
+  margin: 20px;
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+
+    &.light {
+        color: black;
+        background-color: #fff;
+      }
+    
+      &.dark {
+        color: white;
+        background-color: #000;
+      }
+  }
+  
+  .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 400px;
+  
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+    .image-overlay {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      transition: background-color 0.3s ease;
+  
+      .card-content {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.7);
+  
+        .title {
+          font-size: 1.5rem;
+          margin-bottom: 10px;
+        }
+  
+        .overview {
+          font-size: 0.9em;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+      }
+  
+      .ranking-content {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 40px;
+        padding: 40px 0;
+        align-items: center;
+  
+        .ranking {
+          font-size: 1.2rem;
+          background-color: #F78C38;
+          padding: 10px 10px;
+          border-radius: 50%;
+        }
+  
+        .details-button {
+          background-color: #F78C38;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+  
+          &:hover {
+            background-color: #DD6609;
+          }
+        }
+      }
+    }
+  }
+}
